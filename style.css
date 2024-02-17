@@ -1,0 +1,32 @@
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+  }
+
+.green-text{
+    color:#1DD100;
+
+}
+
+.btn{
+    border-radius: 12px;
+background: #1DD100;
+padding: 21px 30px;
+
+}
+
+.b-border{
+    border-bottom: 3px solid #1DD100;
+}
+
+.gradient{
+    border-radius: 32px;
+background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%);
+}
