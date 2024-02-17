@@ -39,3 +39,9 @@ align-items: center;
     border-radius: 32px;
 background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%);
 }
+
+.ticket{
+    border-radius: 88px 88px 0px 0px;
+border-top: 2px solid #1DD100;
+background: #F7F8F8;
+}
