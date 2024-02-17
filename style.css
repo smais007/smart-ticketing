@@ -22,6 +22,15 @@ padding: 21px 30px;
 
 }
 
+.offer-btn{
+    border-radius: 12px;
+border: 1px solid #1DD100;
+display: inline-flex;
+padding: 21px 30px;
+justify-content: center;
+align-items: center;
+}
+
 .b-border{
     border-bottom: 3px solid #1DD100;
 }
