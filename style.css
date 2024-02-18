@@ -1,47 +1,75 @@
-
-
 .inter {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
 }
 
 .raleway {
     font-family: "Raleway", sans-serif;
     font-style: normal;
-  }
+}
 
-.green-text{
-    color:#1DD100;
+.green-text {
+    color: #1DD100;
 
 }
 
-.btn{
+.btn {
     border-radius: 12px;
-background: #1DD100;
-padding: 21px 30px;
+    background: #1DD100;
+    padding: 21px 30px;
 
 }
 
-.offer-btn{
+.offer-btn {
     border-radius: 12px;
-border: 1px solid #1DD100;
-display: inline-flex;
-padding: 21px 30px;
-justify-content: center;
-align-items: center;
+    border: 1px solid #1DD100;
+    display: inline-flex;
+    padding: 21px 30px;
+    justify-content: center;
+    align-items: center;
 }
 
-.b-border{
+.b-border {
     border-bottom: 3px solid #1DD100;
 }
 
-.gradient{
+.gradient {
     border-radius: 32px;
-background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%);
+    background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%);
 }
 
-.ticket{
+.ticket {
     border-radius: 88px 88px 0px 0px;
-border-top: 2px solid #1DD100;
-background: #F7F8F8;
+    border-top: 2px solid #1DD100;
+    background: #F7F8F8;
+}
+
+.seat {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #F7F8F8;
+}
+
+.seatName {
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+}
+
+.vl-divider {
+
+    height: 992px;
+
+    border-left: 2px dotted rgba(3, 7, 18, 0.30);
+}
+
+.hr {
+    border: 1px dotted rgba(3, 7, 18, 0.20);
 }
