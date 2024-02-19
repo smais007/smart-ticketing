@@ -80,6 +80,7 @@ html {
     flex-shrink: 0;
     border-radius: 12px;
     background: #F7F8F8;
+    cursor: pointer;
 }
 
 .seatName {
