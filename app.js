@@ -50,7 +50,9 @@ function updateStatus() {
 
   totalPrice = selectedSeatNumber * ticketPrice;
   const total_price = document.getElementById("total-price");
+  const discount_price = document.getElementById("grand-total");
   total_price.innerText = totalPrice;
+  discount_price.innerText = totalPrice;
 
   const userNumber = document.getElementById("number");
   const nextBtn = document.getElementById("nextBtn");

@@ -13,6 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="style.css" />
   <title>Document</title>
 </head>
@@ -21,95 +22,24 @@
   <!-- Navbar -->
   <header>
     <div class="container mx-auto w-[73.188rem]">
-      <!-- <nav
-          class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
-        >
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-          >
-            <a
-              href="https://flowbite.com/"
-              class="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <span
-                class="self-center text-2xl font-semibold whitespace-nowrap text-[#030712]"
-                >P-Ticket</span
-              >
-            </a>
-            <div
-              class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-            >
-              <button
-                type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Get started
-              </button>
-              <button
-                data-collapse-toggle="navbar-sticky"
-                type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-sticky"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Open main menu</span>
-                <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 17 14"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 1h15M1 7h15M1 13h15"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-sticky"
-            >
-              <ul
-                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                    >About</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                    >Services</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav> -->
+      <!-- navvvvvvvvvvvvvvvvvv barrrrrrrrrrrrr -->
+      <nav class="flex justify-between items-center pt-14">
+        <div>
+          <h1 class="raleway text-[36px] font-extrabold text-[#030712]">P-Ticket</h1>
+        </div>
+        <div>
+          <ul class="flex justify-between items-center gap-14">
+            <li class="font-medium text-lg text-[##030712B2] raleway cursor-pointer">Home</li>
+            <li class="font-medium text-lg text-[##030712B2] raleway cursor-pointer">About</li>
+            <li class="font-medium text-lg text-[##030712B2] raleway cursor-pointer">Destination</li>
+            <li class="font-medium text-lg text-[##030712B2] raleway cursor-pointer">Search</li>
+          </ul>
+        </div>
+        <div class=" nav-btn flex justify-between items-center gap-2 bg-[#1DD1001A] px-8 py-4 rounded-xl">
+          <h1 class="text-[#1DD100] font-bold text-xl raleway">Bus</h1>
+          <img src="images/bus-icon.png" alt="">
+        </div>
+      </nav>
       <!-- Bnner section -->
       <section>
         <div
@@ -144,18 +74,18 @@
           </div>
           <!-- card 1 -->
           <div class="flex bg-white w-[308px] h-[138px] rounded-3xl gap-4 p-8 b-border">
-            <img class="w-16 h-16" src="images/people.png" alt="" />
+            <img class="w-16 h-16" src="images/ticket-cupon.png" alt="" />
             <div>
-              <h1 class="font-bold text-4xl text-[#030712]">500K+</h1>
-              <p class="">Registered users</p>
+              <h1 class="font-bold text-4xl text-[#030712]">1.7 lacks</h1>
+              <p class="">Tickets sold</p>
             </div>
           </div>
           <!-- card 1 -->
           <div class="flex bg-white w-[308px] h-[138px] rounded-3xl gap-4 p-8 b-border">
-            <img class="w-16 h-16" src="images/people.png" alt="" />
+            <img class="w-16 h-16" src="images/stoppage.png" alt="" />
             <div>
-              <h1 class="font-bold text-4xl text-[#030712]">500K+</h1>
-              <p class="">Registered users</p>
+              <h1 class="font-bold text-4xl text-[#030712]">80K+</h1>
+              <p class="">Rental partners</p>
             </div>
           </div>
         </div>
@@ -167,7 +97,7 @@
     <h1 class="raleway font-bold text-center text-[40px] pb-12">
       Best offers for you
     </h1>
-    <div class="flex gap-6 pb-16">
+    <div class="flex gap-6 pb-16 justify-evenly">
       <!-- coupon 1 -->
       <div class="">
         <div class="flex w-[35.8rem] h-[13.75rem] bg-[#FFBF0F] rounded-3xl justify-between items-center px-14 relative">
@@ -191,9 +121,9 @@
       </div>
       <!-- coupon 1 -->
       <div class="">
-        <div class="flex w-[35.8rem] h-[13.75rem] bg-[#FFBF0F] rounded-3xl justify-between items-center px-14 relative">
+        <div class="flex w-[35.8rem] h-[13.75rem] bg-[#F78C9C] rounded-3xl justify-between items-center px-14 relative">
           <div class="">
-            <h1 class="inter font-black text-[40px] leading-9">15% OFF</h1>
+            <h1 class="inter font-black text-[40px] leading-9">20% OFF</h1>
             <p class="inter font-semibold text-[#03071280] text-xl leading-9">
               on your next purchase
             </p>
@@ -205,15 +135,18 @@
             <img class="relative left-[20px]" src="images/cupon-devider.png" alt="" />
           </div>
           <div>
-            <h1 class="raleway font-bold text-[32px]">NEW15</h1>
+            <h1 class="raleway font-bold text-[32px]">Couple 20</h1>
             <p class="raleway text-xl text-[#03071266]">Coupon Code</p>
           </div>
         </div>
       </div>
     </div>
-    <button class="mb-28 raleway text-xl font-bold text-[#1DD100] offer-btn">
-      See All Offers
-    </button>
+    <div class="flex justify-center items-center">
+      <button class=" mb-28 raleway text-xl font-bold text-[#1DD100] offer-btn ">
+        See All Offers
+      </button>
+    </div>
+
   </section>
   <!-- Ticket Section -->
   <main class="w-[1440px] ticket mx-auto pb-32 ">
@@ -286,7 +219,7 @@
     </div>
 
     <!-- Bus seat and ticket price  information -->
-    <section class="container mx-auto w-[73.188rem] bg-white mt-7 rounded-3xl pb-8">
+    <section id="BuyTickets" class="container mx-auto w-[73.188rem] bg-white mt-7 rounded-3xl pb-8">
       <!-- seat information -->
       <!-- Seat -->
       <div class="flex px-8 ">
@@ -390,7 +323,7 @@
             <div id="" class=" pb-4">
               <p class="pr-[153px] inter text-[#03071299]"><span id="selectedSeatName"></span></p>
               <p class="pr-[90px] inter text-[#03071299]"><span class="seatClass"></span></p>
-              <p class="inter text-[#03071299]"><span class="price550"></span></p>
+              <p class="inter text-[#03071299]"><span class="price550">00</span></p>
             </div>
             <hr>
             <div class="flex justify-between py-4">
@@ -498,9 +431,7 @@
       </div>
     </div>
   </footer>
-
-
-  <script src="app.js"></script>
+  <script src="app.js"> </script>
 </body>
 
 </html>
