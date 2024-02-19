@@ -67,6 +67,10 @@ function updateStatus() {
     if (selectedSeatNumber > 0 && userNumber.value !== "") {
       console.log("clicked");
       my_modal_2.showModal();
+
+      setTimeout(function () {
+        window.location.reload();
+      }, 10000);
     } else {
       swal({
         title: "Pone Number Required",
@@ -116,3 +120,9 @@ couponBtn.addEventListener("click", function () {
     });
   }
 });
+
+// modal close
+function closeModal() {
+  const modal = document.getElementById("my_modal_2");
+  modal.close();
+}
