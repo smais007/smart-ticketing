@@ -34,7 +34,12 @@ for (let index = 0; index < seats.length; index++) {
       p.innerText = `${seatName}${Class}${ticketPrice}`;
       selectedSeatName.appendChild(p);
     } else {
-      alert("You can only book up to 4 seats at a time.");
+      // alert("You can only book up to 4 seats at a time.");
+      swal({
+        title: "OPPS!",
+        text: "You can only book up to 4 seats at a time.",
+        icon: "warning",
+      });
     }
     updateStatus();
   });
@@ -63,7 +68,11 @@ function updateStatus() {
       console.log("clicked");
       my_modal_2.showModal();
     } else {
-      alert("Enter your phone number");
+      swal({
+        title: "Pone Number Required",
+        text: "Please enter your phone number",
+        icon: "info",
+      });
     }
   });
 }
@@ -91,9 +100,19 @@ couponBtn.addEventListener("click", function () {
       couponField.style.display = "none";
       couponBtn.style.display = "none";
     } else {
-      alert("Invalid Coupon code. Please enter a valid code");
+      // alert("Invalid Coupon code. Please enter a valid code");
+      swal({
+        title: "Invalid coupon code",
+        text: "Please enter a valid coupon code.",
+        icon: "error",
+      });
     }
   } else {
-    alert("You need to buy 4 tickets to apply a coupon code :)");
+    // alert("You need to buy 4 tickets to apply a coupon code :)");
+    swal({
+      title: "OPPS!",
+      text: "You need to buy 4 tickets to apply a coupon code ",
+      icon: "error",
+    });
   }
 });
