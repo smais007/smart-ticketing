@@ -31,10 +31,8 @@ for (let index = 0; index < seats.length; index++) {
 
       const selectedSeatName = document.getElementById("selectedSeatName");
 
-
       const seatInfo = `<div style="display:flex"><span style="margin-right: 153px;">${seatName}</span> <span style="margin-right: 100px;">${Class}</span> <span>${ticketPrice}</span></div>`;
 
-    
       const p = document.createElement("p");
       p.innerHTML = seatInfo;
       selectedSeatName.appendChild(p);
@@ -75,7 +73,7 @@ function updateStatus() {
 
       setTimeout(function () {
         window.location.reload();
-      }, 10000);
+      }, 2000);
     } else {
       swal({
         title: "Pone Number Required",
