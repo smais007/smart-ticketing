@@ -30,8 +30,13 @@ for (let index = 0; index < seats.length; index++) {
       selectedSeatNumber++;
 
       const selectedSeatName = document.getElementById("selectedSeatName");
+
+
+      const seatInfo = `<div style="display:flex"><span style="margin-right: 153px;">${seatName}</span> <span style="margin-right: 100px;">${Class}</span> <span>${ticketPrice}</span></div>`;
+
+    
       const p = document.createElement("p");
-      p.innerText = `${seatName}${Class}${ticketPrice}`;
+      p.innerHTML = seatInfo;
       selectedSeatName.appendChild(p);
     } else {
       // alert("You can only book up to 4 seats at a time.");
@@ -65,7 +70,7 @@ function updateStatus() {
 
   nextBtn.addEventListener("click", function () {
     if (selectedSeatNumber > 0 && userNumber.value !== "") {
-      console.log("clicked");
+      // console.log("clicked");
       my_modal_2.showModal();
 
       setTimeout(function () {
@@ -92,7 +97,7 @@ couponBtn.addEventListener("click", function () {
 
   if (selectedSeatNumber === 4) {
     const discountContainer = document.getElementById("discount-price");
-    const discountPercentage = { NEW15: 0.15, NEW20: 0.2 }[couponValue];
+    const discountPercentage = { NEW15: 0.15, COUPLE20: 0.2 }[couponValue];
 
     if (discountPercentage !== undefined) {
       const discountPrice = totalPrice * discountPercentage;
